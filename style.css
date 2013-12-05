@@ -1,0 +1,114 @@
+body{font-family: Verdana, 'Lucida Grande';}
+#menu ul, #menu li, #menu a {margin: 0;padding: 0;}
+#menu ul {list-style: none;}
+#menu a {text-decoration: none;}
+#menu {
+  height: 40px;
+  background-color: #232323;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+  width: 500px;
+  margin: 0 auto;
+}
+#menu > ul > li {
+  float: left;
+  margin-left: 15px;
+  position: relative;
+}
+#menu > ul > li > a {
+  color: #a0a0a0;
+  font-size: 15px;
+  line-height: 40px;
+  padding: 11px 20px;
+  -webkit-transition: color .15s;
+  -moz-transition: color .15s;
+  -ms-transition: color .15s;
+  -o-transition: color .15s;
+  transition: color .15s;
+}
+#menu > ul > li > a:hover {color: #ffffff;}
+#menu > ul > li > ul {
+  opacity: 0;
+  visibility: hidden;
+  padding: 16px 0 20px 0;
+  background-color: #fafafa;
+  text-align: left;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  margin-left: -90px;
+  width: 180px;
+  -webkit-transition: all .3s .1s;
+  -moz-transition: all .3s .1s;
+  -o-transition: all .3s .1s;
+  transition: all .3s .1s;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+}
+#menu > ul > li:hover > ul {
+  opacity: 1;
+  top: 42px;
+  visibility: visible;
+}
+#menu > ul > li > ul:before {
+  content: '';
+  display: block;
+  border-color: transparent transparent #fafafa transparent;
+  border-style: solid;
+  border-width: 10px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -10px;
+}
+#menu > ul ul > li {position: relative;}
+#menu ul ul a {
+  color: #323232;
+  font-size: 13px;
+  background-color: #fafafa;
+  padding: 5px 8px 7px 16px;
+  display: block;
+  -webkit-transition: background-color 0.1s;
+  -moz-transition: background-color 0.1s;
+  -ms-transition: background-color 0.1s;
+  -o-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+}
+#menu > ul > li > ul > li > ul:before {
+  content: '';
+  display: block;
+  border-color: transparent #333 transparent transparent;
+  border-style: solid;
+  border-width: 10px;
+  position: absolute;
+  top: 23%;
+  left: -20px;
+}
+#menu ul ul ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -16px;
+  left: 206px;
+  padding: 16px 0 20px 0;
+  background-color: #fafafa;
+  text-align: left;
+  width: 180px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+}
+#menu ul ul > li:hover > ul {
+  opacity: 1;
+  left: 200px;
+  visibility: visible;
+}
+#menu ul ul a:hover {
+  background-color: #0087db;
+  color: #f0f0f0;
+}
